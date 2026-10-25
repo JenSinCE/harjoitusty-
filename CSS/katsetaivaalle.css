@@ -1,107 +1,392 @@
 body {
-    background-color: rgb(92, 112, 168);
-    width: 80vw;
-    margin: 24px;
-    line-height: 1.6;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    line-height: 1.5;
 
 }
 
 
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 201, 5);
+    text-align: center;
+    margin-bottom: 20px;
+    
+    
+}
 
 
 p {
-    color: rgb(19, 19, 19);
-    font-size: 18px;
-    font-weight: bold;
-}
-
-
- h1 , h2 , h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(235, 220, 17);
+    color: rgb(2, 2, 2);
+    font-size: 18px; 
+   
 }
 
 
 section {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 
-aside {
-    float: right;
-    width: 30%;
-    background-color: rgba(23, 6, 121, 0.856);
-    margin-top: 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    padding: 15px 30px;
-   
-    }
-
-.retkikortti {
-    
-        background-color: rgba(23, 6, 121, 0.856);
-        padding: 15px 30px;
-        border: 4px solid rgb(246, 250, 14);
-        border-radius: 50px;
-        text-align: center;
-        margin-bottom: 50px;
-        
-        
-    
-    }
-      
-
-
-
-.esittely {
-    color: rgb(19, 18, 17);
-    font-size: 1.3rem; /* 1.3 kertaa oletusfontin koko */
-    font-style: italic;
-    background-color: rgba(255, 233, 34, 0.7);
-    border: 5px solid rgb(255, 233, 34);
-
-    
-}
-
-
-.tapahtuma {
-    background-color: rgba(255, 233, 34, 0.7);
-    padding: 6px;
-    border: 4px solid rgb(255, 233, 34);
-    border-radius: 20px;
-}
-
-
-.tieto  {
-    color: rgb(4, 5, 12);
-    font-size: 17px;
-    font-weight: bold;
-
-}
 
 .reuna {
-    border: 5px solid rgb(255, 233, 34);
-    border-radius: 20px;
+    
+    border-radius: 5px;
     padding: 10px;
-    background-color: rgba(26, 6, 121, 0.856);
-    border-style: groove;
+    background-color: rgb(3, 3, 3);
+    border-bottom: 3px solid rgb(245, 201, 5);
+    
+    
 }
+
+
+
+img, .aikakortti, .retkikortti, .tieto {
+    box-shadow: 0 4px 8px;
+}
+
+
+
+
+/*Yläosan tyylit*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 40px;
+    background-color: rgba(12, 12, 12, 0.966);
+
+}
+
+.esittely {
+    font-size: 1.3rem;
+    /* 1.3 kertaa oletusfontin koko */
+    font-style: italic;
+    text-align: center;
+    color: rgb(245, 201, 5);
+}
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 30px;
+}
+
+
+.nav a {
+    
+    text-decoration: none;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 6px 10px;
+    
+}
+
+
+
+
+
+/* Mitä taivaalla tapahtuu tänään*/
+
+
+
+.taivaskortit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    margin-bottom: 60px;
+    
+}
+
+
+.taivaskortti {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex: 1 1 300px;
+    
+}
+
+
+.taivaskortti img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+
+.taivaskortti p{
+    font-weight: bold;
+}
+
+
+
+
+/* Hyvä tietä osio*/
+
+.vinkit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 30px;
+    margin-bottom: 60px;
+}
+
+
+.tieto {
+    display: flex;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+    background-color: rgb(7, 7, 7);
+    padding: 2px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+
+.tieto img {
+    width: 200px;
+    min-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.tieto p {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 17px;
+    color: black;
+}
+
+
+
+
+/*Alareunan kortit*/
+
+
+.retkilaatikko {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+
+.retkikortti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(13, 13, 14);
+    padding: 8px 15px;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 7px;
+    text-align: center;
+    
+    
+}
+
+
+.retkilaatikko .retkikortti {
+    flex: 0 1 350px;
+    box-sizing: border-box;
+    
+}
+
+
+.retkikortti h3 {
+    font-size: 16px;
+}
+
+
+.retkikortti p {
+    font-size: 14px;
+    color: rgb(245, 201, 5);
+    line-height: 1.3;
+}
+
+
+
+
+/*Milloin kannattaa katsoa asetukset*/
+
+.aikakortit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding:30px;
+}
+
+
+.aikakortti {
+    display: flex;
+    flex: 1 1 250px;
+    box-sizing: border-box;
+    padding: 15px;
+    flex-direction: column; 
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+
+.aikakortti img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    
+
+}
+
+
+.aikakortti p {
+    color: rgb(245, 245, 245);
+}
+
+
+.välineet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+
+.välineet img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.välineet h3 {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    flex: 1;
+}
+
+
+
+
+
+
+/*Taivaantapahtumat*/
+
+.tapahtuma {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+
+.tapahtuma img {
+    width: 250px;
+    height: 180px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+    
+}
+
+.kuvatvierekkäin{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tapahtuma p{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/*Liittymislomakesivu*/
+
+.maakuvat {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.maakuvat img {
+    width: 220px;
+    height: 160px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/*Alatunniste*/
 
 footer {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 100px;
-    
-    
+    background-color: black;
+}
+
+footer p {
+    color: rgb(245, 201, 5);
+    font-size: 18px;
 }
 
 
 
-a[href^="https"] {
-    color: rgb(249, 253, 17);
+a[href^="https"], a[href$=".html"] {
+    color: rgb(245, 201, 5);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
-a[href$=".html"] {
-    color: rgb(249, 253, 17);
+a:hover {
+    text-decoration:underline;
 }

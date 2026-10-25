@@ -9,15 +9,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>Milloin kannattaa katsoa taivaalle?</h1>
         <p class="esittely">Tältä sivulta löydät vinkkejä milloin nähdä parhaiten tapahtumia ja mitä käyttää välineinä
         </p>
     </header>
-    <nav>
-        <a href="index.html">Tapahtuu tänään</a> <br>
-        <a href="milloinkannattaakatsoa.html">Milloin</a> <br>
-        <a href="taivaantapahtumat.html">Taivaan tapahtumat</a> <br>
+
+    <nav class="nav">
+        <a href="index.html">Tapahtuu tänään</a> 
+        <a href="milloinkannattaakatsoa.html">Milloin</a>
+        <a href="taivaantapahtumat.html">Taivaan tapahtumat</a>
         <a href="liittymislomake.html">Liity yhteisöön</a>
     </nav>
 
@@ -26,26 +27,57 @@
         <section>
             <h2 class="reuna">Aamulla</h2>
 
-            <p>Aamulla voi nähdä kuun ja eri planeettoja.🌜🪐🌒</p>
-            <p>Aamulla voi nähdä auringonnousun.🌄</p>
-            
+            <div class="aikakortit">
+
+                <div class="aikakortti">
+                    <img src="kuvat/kuuplaneetat.jpg" alt="Kuu ja planeetat">
+                    <p>Kuu ja eri planeetat</p>
+                </div>
+
+                <div class="aikakortti">
+                    <img src="kuvat/auringonnousu.jpg" alt="Auringonnousu">
+                    <p>Auringonnousu</p>
+                </div>
+
+            </div>
         </section>
-        
+
 
         <section>
             <h2 class="reuna">Yöllä</h2>
 
-            <p>Yöllä näkee perseidit ja muut tähdet parhaiten.🌠</p>
-            <p>Revontulien näkeminen on parasta yöllä.☄️</p>
-            <p>Mahdollisuus nähdä rakettien lähtö tai satelliittivana.🧑‍🚀🛰️</p>
+            <div class="aikakortit">
+
+                <div class="aikakortti">
+                    <img src="kuvat/tahdet.jpg" alt="Tähdet">
+                    <p>Yöllä näkee perseidit ja muut tähdet parhaiten</p>
+                </div>
+
+                <div class="aikakortti">
+                    <img src="kuvat/revontulet.jpg" alt="Revontulet">
+                    <p>Revontulien näkeminen on parasta yöllä</p>
+                </div>
+
+                <div class="aikakortti">
+                    <img src="kuvat/raketti.jpg" alt="Raketti">
+                    <p>Mahdollisuus nähdä rakettien lähtö tai satelliittivana</p>
+                </div>
+
+            </div>
         </section>
 
         <section>
             <h2 class="reuna">Vinkit välineisiin</h2>
 
-            <p>Puhelimella voit käyttää tähtikarttaa ja ottaa hienoja kuvia.📱</p>
-            <p>Kiikareilla näet taivaan tapahtumat tarkemmin.</p>
-            <p>Teleskoopilla näet vielä enemmän.🔭</p>
+            <div class="välineet">
+                <img src="kuvat/puhelin.jpg" alt="Puhelin">
+                <h3>Puhelin - tähtikartta ja kuvaus</h3>
+            </div>
+
+            <div class="välineet">
+                <img src="kuvat/teleskooppi.jpg" alt="Teleskooppi">
+                <h3>Teleskooppi - kaukaiset kohteet</h3>
+            </div>
         </section>
 
         <section class="retkikortti">
@@ -58,7 +90,7 @@
 
     <footer>
         <p>Muista toivoa, kun näet tähdenlennon💫</p>
-        <p>Katse taivaalle &copy; 2026</p> 
+        <p>Katse taivaalle &copy; 2026</p>
 
     </footer>
 
