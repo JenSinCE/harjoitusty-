@@ -120,7 +120,7 @@ img, .aikakortti, .retkikortti, .tieto {
     max-width: 300px;
     height: 200px;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 
 
@@ -151,7 +151,7 @@ img, .aikakortti, .retkikortti, .tieto {
     padding: 2px;
     border: 2px solid rgb(0, 0, 0);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
 
@@ -199,22 +199,19 @@ img, .aikakortti, .retkikortti, .tieto {
 .retkikortti {
     display: flex;
     flex-direction: column;
+    flex: 1 1 280px;
+    box-sizing: border-box;
     align-items: center;
     background-color: rgb(13, 13, 14);
     padding: 8px 15px;
-    border: 2px solid rgb(10, 10, 10);
-    border-radius: 7px;
+    border-radius: 5px;
     text-align: center;
     
     
 }
 
 
-.retkilaatikko .retkikortti {
-    flex: 0 1 350px;
-    box-sizing: border-box;
-    
-}
+
 
 
 .retkikortti h3 {
@@ -347,6 +344,7 @@ img, .aikakortti, .retkikortti, .tieto {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    
 }
 
 .maakuvat img {
@@ -369,7 +367,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 30vh;
     background-color: black;
 }
 
