@@ -343,9 +343,9 @@ video,
 }
 
 table {
-    width: 85%;
+    width: 60%;
     border: 3px solid black;
-    margin: 0 auto; 
+    margin: 0 auto;
     border-collapse: collapse;
     text-align: left;
 }
@@ -359,21 +359,22 @@ thead {
     font-weight: bold;
 }
 
-th, td {
+th,
+td {
     border: 2px solid black;
     padding: 5px;
 }
 
 
 tbody tr:nth-child(even) {
-    background-color:white;
+    background-color: white;
     color: black;
 }
 
 
 tbody tr:nth-child(odd) {
     background-color: rgb(245, 201, 5);
-     color: black;
+    color: black;
 }
 
 
@@ -414,7 +415,6 @@ fieldset {
 
 
 .kenttä {
-
     margin-bottom: 12px;
 }
 
