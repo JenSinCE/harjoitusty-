@@ -11,7 +11,7 @@
 
 <body>
     <header id="alku" class="header">
-        <h1>Liittymislomake</h1>
+        <h1>Liity yhteisöömme</h1>
         <p class="esittely">Tässä lomakkeessa voit liittyä yhteisöömme ja tilata uutiskirjeemme</p>
     </header>
     <nav class="nav">
@@ -21,32 +21,62 @@
         <a href="liittymislomake.html">Liity yhteisöön</a>
     </nav>
 
-    <main>
+    <main class="lomake">
 
-        <section>
-            <h2>Liittymislomake</h2>
-            
+        <h2>Liittymislomake</h2>
+        <p>Täytä alla olevat kentät ja saa ajankohtaisia uutisia yhteisömme kautta</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Yhteystiedot</legend>
+
+                <div class="kenttä">
+                    <label for="nimi">Koko nimi:</label>
+                    <input type="text" id="nimi" name="nimi" required placeholder="Etunimi Sukunimi" autocomplete="name"
+                        maxlength="100">
+                </div>
+
+                <div class="kenttä">
+                    <label for="sähköposti">Sähköposti:</label>
+                    <input type="email" id="sähköposti" name="sähköposti" required placeholder="esimerkki@esimerkki.com"
+                        autocomplete="email">
+                </div>
+
+                <div class="valinta">
+                    <input type="checkbox" id="hyväksy" name="hyväksy" required value="hyväksytty">
+                    <label for="hyväksy">Hyväksyn käyttöehdot</label>
+                </div>
+
+                <div class="nappi">
+                    <button type="submit">Lähetä</button>
+                </div>
+
+            </fieldset>
 
 
-
-        </section>
-
-        <div class="maakuvat">
-            
-            <img src="kuvat/maa1.jpg" alt="Sääilmiö maapallolla avaruudesta nähtynä" width="3921" height="3975">
-            <img src="kuvat/maa2.jpg" alt="Auringonlasku maapallolla avaruudesta nähtynä" width="4000" height="2000">
-            <img src="kuvat/metsa.jpg" alt="Polku luonnon keskellä" width="2432" height="3648">
-            <img src="kuvat/vesi.jpg" alt="Meri ja laineet auringonpaisteessa" width="6000" height="4000">
-            <img src="kuvat/kasvi.jpg" alt="Kasvin taimi" width="3872" height="2592">
-
-        </div>
-
-
-
-
-
+        </form>
 
     </main>
+
+
+
+
+
+    <div class="maakuvat">
+
+        <img src="kuvat/maa1.jpg" alt="Sääilmiö maapallolla avaruudesta nähtynä" width="3921" height="3975">
+        <img src="kuvat/maa2.jpg" alt="Auringonlasku maapallolla avaruudesta nähtynä" width="4000" height="2000">
+        <img src="kuvat/metsa.jpg" alt="Polku luonnon keskellä" width="2432" height="3648">
+        <img src="kuvat/vesi.jpg" alt="Meri ja laineet auringonpaisteessa" width="6000" height="4000">
+        <img src="kuvat/kasvi.jpg" alt="Kasvin taimi" width="3872" height="2592">
+
+    </div>
+
+
+
+
+
+
+
 
     <footer>
         <p>Muista toivoa, kun näet tähdenlennon💫</p>

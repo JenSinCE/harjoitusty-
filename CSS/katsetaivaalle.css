@@ -6,20 +6,22 @@ body {
 }
 
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(245, 201, 5);
     text-align: center;
     margin-bottom: 20px;
-    
-    
+
+
 }
 
 
 p {
     color: rgb(2, 2, 2);
-    font-size: 18px; 
-   
+    font-size: 18px;
+
 }
 
 
@@ -30,18 +32,23 @@ section {
 
 
 .reuna {
-    
+
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(3, 3, 3);
     border-bottom: 3px solid rgb(245, 201, 5);
-    
-    
+
+
 }
 
 
 
-img, .aikakortti, .retkikortti, .tieto, video,.ylos {
+img,
+.aikakortti,
+.retkikortti,
+.tieto,
+video,
+.ylos {
     box-shadow: 0 4px 8px;
 }
 
@@ -78,13 +85,13 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
 
 
 .nav a {
-    
+
     text-decoration: none;
     font-size: 15px;
     background-color: black;
     border-radius: 5px;
     padding: 6px 10px;
-    
+
 }
 
 
@@ -102,16 +109,16 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
     gap: 20px;
     padding: 30px;
     margin-bottom: 60px;
-    
+
 }
 
 
 .taivaskortti {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     flex: 1 1 300px;
-    
+
 }
 
 
@@ -124,7 +131,7 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
 }
 
 
-.taivaskortti p{
+.taivaskortti p {
     font-weight: bold;
 }
 
@@ -152,7 +159,7 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
     border: 2px solid rgb(0, 0, 0);
     text-align: center;
     border-radius: 5px;
-    
+
 }
 
 
@@ -187,7 +194,7 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
 
 
 .retkilaatikko {
-    
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -206,8 +213,8 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
     padding: 8px 15px;
     border-radius: 5px;
     text-align: center;
-    
-    
+
+
 }
 
 
@@ -235,7 +242,7 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding:30px;
+    padding: 30px;
 }
 
 
@@ -244,7 +251,7 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
     flex: 1 1 250px;
     box-sizing: border-box;
     padding: 15px;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     background-color: black;
     text-align: center;
@@ -259,7 +266,7 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
     height: 180px;
     object-fit: cover;
     border-radius: 5px;
-    
+
 
 }
 
@@ -317,11 +324,11 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
     max-width: 100%;
     object-fit: cover;
     border-radius: 5px;
-    
-    
+
+
 }
 
-.kuvatvierekkäin{
+.kuvatvierekkäin {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -329,23 +336,153 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
     gap: 30px;
 }
 
-.tapahtuma p{
+.tapahtuma p {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+}
+
+table {
+    width: 85%;
+    border: 3px solid black;
+    margin: 0 auto; 
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table caption {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+thead {
+    font-weight: bold;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color:white;
+    color: black;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(245, 201, 5);
+     color: black;
 }
 
 
 
 /*Liittymislomakesivu*/
 
+.lomake {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    width: min(600px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+
+.lomake p {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(245, 201, 5);
+}
+
+
+form {
+    width: 100%;
+    color: rgb(245, 201, 5);
+    font-weight: bold;
+}
+
+
+fieldset {
+    border: 2px solid rgb(245, 201, 5);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+.kenttä {
+
+    margin-bottom: 12px;
+}
+
+
+.kenttä label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"] {
+    width: 95%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+.lomake input:focus {
+    outline: 2px solid rgb(245, 201, 5);
+}
+
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+    border: 3px solid red;
+}
+
+input[type="checkbox"] {
+    accent-color: rgb(245, 201, 5);
+}
+
+
+.nappi {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+button {
+    background-color: rgb(245, 201, 5);
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid rgb(245, 201, 5);
+    font-weight: bold;
+}
+
+
+button:hover {
+    background-color: black;
+    color: rgb(245, 201, 5);
+    border: 2px solid rgb(245, 201, 5);
+}
+
+
 .maakuvat {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
+
 
 .maakuvat img {
     width: 220px;
@@ -355,14 +492,13 @@ img, .aikakortti, .retkikortti, .tieto, video,.ylos {
     border-radius: 5px;
 }
 
+
 video {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    
-    
 }
 
 
@@ -381,10 +517,12 @@ footer {
     background-color: black;
 }
 
+
 footer p {
     color: rgb(245, 201, 5);
     font-size: 15px;
 }
+
 
 .ylos {
     position: fixed;
@@ -406,19 +544,19 @@ footer p {
     border-style: solid;
     border-color: rgb(245, 201, 5);
     border-width: 2px;
-
 }
 
-.ylos:hover, .ylos:focus {
+
+.ylos:hover,
+.ylos:focus {
     background-color: black;
     color: rgb(245, 201, 5);
-    text-decoration: none;   
-
+    text-decoration: none;
 }
 
 
-
-a[href^="https"], a[href$=".html"] {
+a[href^="https"],
+a[href$=".html"] {
     color: rgb(245, 201, 5);
     text-decoration: none;
     font-weight: bold;
@@ -426,5 +564,5 @@ a[href^="https"], a[href$=".html"] {
 
 
 a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
